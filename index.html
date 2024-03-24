@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Fraud</title>
+    <title>My Book</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,51 +11,26 @@
         <div class="sidebar">
             <h2>Chapter Index</h2>
             <ul>
-                <li><a href="chapter1.html">Loan App Fraud</a></li>
-                <li><a href="#chapter2">Chapter 2</a></li>
-                <li><a href="#chapter3">Chapter 3</a></li>
+                <li><a href="chapter1.html">Loan App Fruad</a></li>
+                <li><a href="chapter2.html">Chapter 2</a></li>
+                <!-- Add more chapter links as needed -->
             </ul>
         </div>
         <div class="content">
-            <div id="chcapter1">
-                <h1>Chapter 1</h1>
-                <!-- Content of Chapter 1 -->
-            </div>
-            <div id="chapter2">
-                <h1>Chapter 2</h1>
-                <!-- Content of Chapter 2 -->
-            </div>
-            <div id="chapter3">
-                <h1>Chapter 3</h1>
-                <!-- Content of Chapter 3 -->
-            </div>
+            <!-- Content of individual chapters will be loaded dynamically here -->
         </div>
-        <div class="sidebar-right-top" id="sidebar-right-top">
+        <div class="sidebar-right-top">
             <h2>Chapter Table of Contents</h2>
             <!-- Placeholder for dynamically generated TOC -->
+            <div class="toc" id="toc_chapter">
+                <!-- TOC will be dynamically inserted here -->
+            </div>
         </div>
         <div class="sidebar-right">
             <h2>Global Table of Contents</h2>
             <!-- Global TOC links here -->
         </div>
     </div>
-    <script>
-        // Function to load TOC for a chapter
-        function loadChapterTOC(chapterNumber) {
-            // Load the HTML content of the corresponding chapter's TOC
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", "chapter" + chapterNumber + ".html", true);
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    // Replace the placeholder with the loaded TOC
-                    document.getElementById("sidebar-right-top").innerHTML = xhr.responseText;
-                }
-            };
-            xhr.send();
-        }
-
-        // Load TOC for Chapter 1 by default
-        loadChapterTOC(1);
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>

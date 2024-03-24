@@ -1,0 +1,21 @@
+/* Add styles for layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.sidebar {
+    flex: 0 0 20%; /* Adjust the width as needed */
+    /* Add styles for chapter index */
+}
+
+.content {
+    flex: 0 0 60%; /* Adjust the width as needed */
+    /* Add styles for individual chapter content */
+}
+
+.toc {
+    flex: 0 0 20%; /* Adjust the width as needed */
+    /* Add styles for table of contents */
+}

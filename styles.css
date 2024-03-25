@@ -19,3 +19,37 @@
     flex: 0 0 20%; /* Adjust the width as needed */
     /* Add styles for table of contents */
 }
+
+/* styles.css */
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 0 0 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #000;
+}

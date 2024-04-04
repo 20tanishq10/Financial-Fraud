@@ -8,6 +8,8 @@
 .sidebar {
     flex: 0 0 20%; /* Adjust the width as needed */
     /* Add styles for chapter index */
+    background-color: #f0f0f0; /* Added background color */
+    padding: 20px; /* Added padding */
 }
 
 .content {
@@ -18,38 +20,10 @@
 .toc {
     flex: 0 0 20%; /* Adjust the width as needed */
     /* Add styles for table of contents */
-}
-
-/* styles.css */
-.container {
-    display: flex;
-}
-
-.sidebar {
-    flex: 0 0 20%;
-    background-color: #f0f0f0;
-    padding: 20px;
-}
-
-.content {
-    flex: 1;
-    padding: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-a:hover {
-    color: #000;
+    position: fixed; /* Make the TOC fixed */
+    top: 20px; /* Adjust the top position */
+    right: 20px; /* Adjust the right position */
+    max-height: calc(100vh - 40px); /* Adjust max height */
+    background-color: #fff; /* Add background color */
+    padding: 20px; /* Add padding */
 }
